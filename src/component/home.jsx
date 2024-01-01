@@ -183,7 +183,7 @@ class Home extends Component {
                         {this.state.stageOfProjects.map((data, index) => (
                             <div key={index} className="col-md-3">
                                 <div className="bg-image hover-overlay ripple">
-                                    <img src={data.url} className="img-fluid" />
+                                    <img src={data.url} alt="{data.name}" className="img-fluid" />
                                     <div className="mask" style={{ backgroundColor: "rgba(227, 216, 224, 0.2)" }}></div>
                                     <a href={data.href}>
                                         <button className="btn btn-dark btn-lg w-100 fs-5 fw-bold" >{data.name}</button>

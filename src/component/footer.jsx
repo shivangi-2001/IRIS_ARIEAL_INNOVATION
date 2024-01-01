@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react';
 
-function FooterComponent() {
+const FooterComponent = () => {
     return (
         <Fragment>
             <footer class="text-center text-lg-start text-muted mt-3 color">

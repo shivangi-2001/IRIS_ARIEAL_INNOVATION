@@ -1,7 +1,7 @@
 import React, { Fragment, useState } from 'react';
 
 
-const HeaderComponent = () => {
+function HeaderComponent (){
     const [open, setOpen] = useState(false);
 
     return (
@@ -25,7 +25,7 @@ const HeaderComponent = () => {
                     <div className={`collapse navbar-collapse ${open ? 'show' : ''}`} id="navbarButtonsExample">
                         <ul className="navbar-nav w-100 justify-content-end gap-4">
                             <li className="nav-item">
-                                <a href="/" className="nav-link fs-4 fw-bolder text-dark" aria-current="page">ABOUT</a>
+                                <a href="/about" className="nav-link fs-4 fw-bolder text-dark" aria-current="page">ABOUT</a>
                             </li>
 
                             <li className="nav-item dropdown">
@@ -78,7 +78,7 @@ const HeaderComponent = () => {
                             </li>
 
                             <li className="nav-item">
-                                <a href="/" className="nav-link fs-4 fw-bolder text-dark ">CONTACT US</a>
+                                <a href="/contact-us" className="nav-link fs-4 fw-bolder text-dark ">CONTACT US</a>
                             </li>
                         </ul>
                     </div>
