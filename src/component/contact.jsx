@@ -6,12 +6,14 @@ class Contact extends Component {
     render() {
         return (
             <Fragment>
-                <header className='fw-bolder text-center text-uppercase' style={{ fontSize: '100px', letterSpacing: '8px' }}>
+                <header className='container fw-bolder text-center text-uppercase' style={{ fontSize: '100px', letterSpacing: '8px' }}>
                     Contact Us
+                   <hr/>
                 </header>
+                
                 <section className='d-flex align-item-center justify-content-center' style={{marginTop:"14vh", marginBottom:'14vh'}}>
-                    <div className='container'>
-                        <div className='row'>
+                    <div className='mx-auto' style={{width: '80%'}}>
+                        <div className='row p-0'>
                             <div className="col-md-6">
                                 <h3 className='text-uppercase text-danger fw-bold'>Our Address</h3>
                                 <p className='lead fw-bolder'>Iris Areial Innovation Limited</p>

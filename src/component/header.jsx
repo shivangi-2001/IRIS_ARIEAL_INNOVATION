@@ -1,7 +1,7 @@
 import React, { Fragment, useState } from 'react';
 
 
-function HeaderComponent (){
+function HeaderComponent() {
     const [open, setOpen] = useState(false);
 
     return (
@@ -30,7 +30,7 @@ function HeaderComponent (){
 
                             <li className="nav-item dropdown">
                                 <a
-                                    data-mdb-toggle="dropdown"
+                                    data-bs-toggle="dropdown"
                                     className="nav-link dropdown-toggle fs-4 fw-bolder text-dark"
                                     href="/"
                                     id="navbarDropdownMenuLink1"
@@ -55,7 +55,7 @@ function HeaderComponent (){
 
                             <li className="nav-item dropdown">
                                 <a
-                                    data-mdb-toggle="dropdown"
+                                    data-bs-toggle="dropdown"
                                     className="nav-link dropdown-toggle fs-4 fw-bolder text-dark"
                                     href="/"
                                     id="navbarDropdownMenuLink"
@@ -76,6 +76,7 @@ function HeaderComponent (){
                                     </li>
                                 </ul>
                             </li>
+
 
                             <li className="nav-item">
                                 <a href="/contact-us" className="nav-link fs-4 fw-bolder text-dark ">CONTACT US</a>
