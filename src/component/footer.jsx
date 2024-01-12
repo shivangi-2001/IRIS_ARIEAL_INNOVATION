@@ -1,126 +1,109 @@
 import React, { Fragment } from 'react';
+import '../css/footer.css';
+
 
 const FooterComponent = () => {
     return (
-        <Fragment>
-            <footer class="text-center text-lg-start text-muted mt-3 color">
-                <section class="">
-                    <div class="container text-center text-md-start pt-4 pb-4">
-                        <div class="row mt-3">
-                            <div class="col-12 col-lg-3 col-sm-12 mb-2">
-                                <a href="https://mdbootstrap.com/"  class="">
-                                    brand Image
-                                </a>
-                                <p class="mt-2 text-dark">
-                                    © 2023 Copyright: MDBootstrap.com
-                                </p>
-                            </div>
+        <footer className="footer is-desktop">
+            <section className="container">
+                <div className="columns">
+                    <figure class="image is-128x128">
+                        <img class="is-rounded" src={process.env.PUBLIC_URL + 'icons.png'} />
+                    </figure>
+                </div>
+                <div class="columns is-desktop">
 
-                            <div class="col-6 col-sm-4 col-lg-2">
-                                <h6 class="text-uppercase text-dark fw-bold mb-2">
-                                    Store
-                                </h6>
-                                <ul class="list-unstyled mb-4">
-                                    <li><a class="text-muted" href="#!">About us</a></li>
-                                    <li><a class="text-muted" href="#!">Find store</a></li>
-                                    <li><a class="text-muted" href="#!">Categories</a></li>
-                                    <li><a class="text-muted" href="#!">Blogs</a></li>
-                                </ul>
-                            </div>
-
-                            <div class="col-6 col-sm-4 col-lg-2">
-                                <h6 class="text-uppercase text-dark fw-bold mb-2">
-                                    Information
-                                </h6>
-                                <ul class="list-unstyled mb-4">
-                                    <li><a class="text-muted" href="#!">Help center</a></li>
-                                    <li><a class="text-muted" href="#!">Money refund</a></li>
-                                    <li><a class="text-muted" href="#!">Shipping info</a></li>
-                                    <li><a class="text-muted" href="#!">Refunds</a></li>
-                                </ul>
-                            </div>
-
-                            <div class="col-6 col-sm-4 col-lg-2">
-                                <h6 class="text-uppercase text-dark fw-bold mb-2">
-                                    Support
-                                </h6>
-                                <ul class="list-unstyled mb-4">
-                                    <li><a class="text-muted" href="#!">Help center</a></li>
-                                    <li><a class="text-muted" href="#!">Documents</a></li>
-                                    <li><a class="text-muted" href="#!">Account restore</a></li>
-                                    <li><a class="text-muted" href="#!">My orders</a></li>
-                                </ul>
-                            </div>
-
-                            <div class="col-12 col-sm-12 col-lg-3">
-                                <h6 class="text-uppercase text-dark fw-bold mb-2">Newsletter</h6>
-                                <p class="text-muted">Stay in touch with latest updates about our products and offers</p>
-                                <div class="input-group mb-3">
-                                    <input type="email" class="form-control border" placeholder="Email" aria-label="Email"
-                                        aria-describedby="button-addon2" />
-                                    <button class="btn btn-light border shadow-0" type="button" id="button-addon2"
-                                        data-mdb-ripple-color="dark">
-                                        Join
-                                    </button>
-                                </div>
-                            </div>
+                    <div class="column">
+                        <div className="column">
+                            Iris Aerial Innovation develops, produces and commercializes high-precision VTOL drones that collect survey-grade aerial data.
+                        </div>
+                        <div className="column">
+                            <h1>HEADQUARTERS</h1>
+                            <li><a href="#!">IRIS AG</a></li>
+                            <li><a href="#!">Giesshübelstrasse 40</a></li>
+                            <li><a href="#!"> 8045 Zurich</a></li>
+                            <li><a href="#!">Switzerland</a></li>
+                        </div>
+                        <div className="column">
+                            <h1>OTHER OFFICES</h1>
+                            <li><a href="#!">Fort Lauderdale, USA</a></li>
+                            <li><a href="#!">Zagreb, Croatia</a></li>
                         </div>
                     </div>
-                </section>
+                    <div class="column">
+                        <div className="column">
+                            <h1>Drone</h1>
+                            <li><a href="#!">Camera</a></li>
+                            <li><a href="#!">Features</a></li>
+                            <li><a href="#!">Extended Services</a></li>
+                            <li><a href="#!">Post-processing Software</a></li>
+                        </div>
+                        <div class="column">
+                            <h1>Data Type</h1>
+                            <li><a href="#!">Orthomosaic</a></li>
+                            <li><a href="#!">Point cloud</a></li>
+                            <li><a href="#!">3D recontruction</a></li>
+                            <li><a href="#!">Multispectral imagery</a></li>
+                        </div>
+                        <div class="column">
+                            <h1>SOLUTIONS</h1>
+                            <li><a href="#!">Urban planning and land management</a></li>
+                            <li><a href="#!">Mining and metals</a></li>
+                            <li><a href="#!">Construction and infrastructure</a></li>
+                            <li><a href="#!">Agriculture</a></li>
+                            <li><a href="#!">Environmental monitoring</a></li>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div className="column">
+                            <h1>LEARN</h1>
+                            <li><a href="#!">Case studies</a></li>
+                            <li><a href="#!">Webinars</a></li>
+                            <li><a href="#!">Downloads</a></li>
+                            <li><a href="#!">Drone comparisons</a></li>
+                            <li><a href="#!">Blog</a></li>
+                            <li><a href="#!">Knowledge base</a></li>
+                        </div>
 
-                <div class="">
-                    <div class="container">
-                        <div class="d-flex justify-content-between py-4 border-top">
-                            <div>
-                                <i class="fab fa-lg fa-cc-visa text-dark"></i>
-                                <i class="fab fa-lg fa-cc-amex text-dark"></i>
-                                <i class="fab fa-lg fa-cc-mastercard text-dark"></i>
-                                <i class="fab fa-lg fa-cc-paypal text-dark"></i>
-                            </div>
+                        <div class="column">
+                            <h1>ABOUT IRIS Aerial</h1>
+                            <li><a href="#!">Company</a></li>
+                            <li><a href="#!">Career</a></li>
+                            <li><a href="#!">Company news</a></li>
+                            <li><a href="#!">Press / Media kits</a></li>
+                            <li><a href="#!">Partners</a></li>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div className="column">
+                            <h1>contact us</h1>
+                            <li><a href="#!">Talk to sales</a></li>
+                            <li><a href="#!">Find a distributor</a></li>
+                            <li><a href="#!">Other inquiries</a></li>
+                        </div>
 
-                            <div class="dropdown dropup">
-                                <a class="dropdown-toggle text-dark" href="#!" id="Dropdown" role="button" data-mdb-toggle="dropdown"
-                                    aria-expanded="false"> <i class="flag-united-kingdom flag m-0 me-1"></i>English </a>
+                        <div class="column">
+                            <h1>SUPPORT</h1>
+                            <li><a href="#!">Quick start guide</a></li>
+                            <li><a href="#!">Knowledge base</a></li>
+                            <li><a href="#!">Submit a ticket</a></li>
+                            <li><a href="#!"><i class="fa fa-lock mr-5" aria-hidden="true"></i>Customer portal</a></li>
+                            <li><a href="#!"><i class="fa fa-lock mr-5" aria-hidden="true"></i>Product roadmap</a></li>
+                            <li><a href="#!"><i class="fa fa-lock mr-5" aria-hidden="true"></i>Product changelog</a></li>
+                            <li><a href='#!'><i class="fa fa-lock mr-5" aria-hidden="true"></i>Send a feature request</a></li>
+                        </div>
 
-                                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="Dropdown">
-                                    <li>
-                                        <a class="dropdown-item" href="#!"><i class="flag-united-kingdom flag"></i>English <i
-                                            class="fa fa-check text-success ms-2"></i></a>
-                                    </li>
-                                    <li>
-                                        <hr class="dropdown-divider" />
-                                    </li>
-                                    <li>
-                                        <a class="dropdown-item" href="#!"><i class="flag-poland flag"></i>Polski</a>
-                                    </li>
-                                    <li>
-                                        <a class="dropdown-item" href="#!"><i class="flag-china flag"></i>中文</a>
-                                    </li>
-                                    <li>
-                                        <a class="dropdown-item" href="#!"><i class="flag-japan flag"></i>日本語</a>
-                                    </li>
-                                    <li>
-                                        <a class="dropdown-item" href="#!"><i class="flag-germany flag"></i>Deutsch</a>
-                                    </li>
-                                    <li>
-                                        <a class="dropdown-item" href="#!"><i class="flag-france flag"></i>Français</a>
-                                    </li>
-                                    <li>
-                                        <a class="dropdown-item" href="#!"><i class="flag-spain flag"></i>Español</a>
-                                    </li>
-                                    <li>
-                                        <a class="dropdown-item" href="#!"><i class="flag-russia flag"></i>Русский</a>
-                                    </li>
-                                    <li>
-                                        <a class="dropdown-item" href="#!"><i class="flag-portugal flag"></i>Português</a>
-                                    </li>
-                                </ul>
-                            </div>
+                        <div class="column">
+                            <h1>PARTNER PROGRAM</h1>
+                            <li><a href="#!">Become a partner</a></li>
+                            <li><a href="#!">Partner news</a></li>
+                            <li><a href="#!"><i class="fa fa-lock mr-5" aria-hidden="true"></i>Partner portal</a></li>
+                            <li><a href="#!"><i class="fa fa-lock mr-5" aria-hidden="true"></i>Knowledge Base for distributors</a></li>
                         </div>
                     </div>
                 </div>
-            </footer>
-        </Fragment>
+            </section>
+        </footer>
     );
 }
 

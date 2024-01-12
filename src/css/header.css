@@ -1,0 +1,131 @@
+.header {
+    font-weight: 500;
+    font-size: .75em;
+    color: #737373;
+    letter-spacing: 1.25px;
+    text-transform: uppercase;
+    margin-bottom: 1.3rem;
+}
+
+.header.tabs {
+    display: flex;
+    flex-wrap: nowrap;
+    margin-bottom: 0;
+}
+
+.tabs:not(:last-child) {
+    margin-bottom: 0px;
+}
+
+.header ul {
+    padding: 0% 7%;
+}
+
+
+.navbar{
+    font-size: .875em;
+    margin: 0 15%;
+}
+
+
+.navbar-menu{
+    width: 100%;
+    display: flex;
+    flex-flow: row;
+}
+
+.navbar-item img{
+    max-height: 4.2rem;
+}
+
+.brand-name{
+    display: flex;
+    flex-direction: column;
+    color: #0cc0df;
+    letter-spacing: 8px;
+    margin: auto 15px;
+}
+
+.brand-name h1{
+    letter-spacing: 3px;
+    font-size: 1.75rem;
+    font-weight: bold;
+}
+
+.brand-name h4{
+    font-size: 1.15rem;
+    font-weight: 900;
+}
+
+.navbar-link{
+    font-size: 1.75em;
+    text-decoration: none;
+}
+
+.navbar-link:hover{
+    color: #0cc0df;
+}
+
+.navbar-item.has-dropdown {
+    padding: 0px 30px;
+}
+
+@media (max-width: 1024px) {
+    .navbar{
+        margin: 0;
+    }
+
+    .brand-name{
+        display: none;
+    }
+}
+
+.navbar-dropdown{
+    width: 800px;
+    border-top: 2px solid #0cc0df;
+    font-size: 0.975rem;
+    left:-200px;
+    padding: 1.2em 1.5em 1.2em;
+}
+
+.navbar-dropdown h1{
+    color:  #62ccfd;
+    font-size: 1.2rem;
+    font-weight: 800;
+    letter-spacing: 4px;
+    margin: 8px 0;
+}
+
+.navbar-dropdown img{
+    width: 500px;
+    max-height: 600px;
+}
+
+.navbar-dropdown li{
+    margin: 14px 0;
+}
+
+.navbar-dropdown li a {
+    color: #737373;
+    text-decoration: none;
+    position: relative; /* Set the position to relative for the parent container */
+}
+
+.navbar-dropdown li a::before {
+    content: ">"; 
+    font-weight: bolder;
+    position: absolute; /* Position the icon absolutely within the link */
+    margin-left: -1em; /* Adjust the margin-left to move the icon to the left of the text */
+    opacity: 0; /* Initially set the opacity to 0 so the icon is hidden */
+    transition: opacity 0.3s ease, margin-left 0.3s ease; /* Add a transition for a smooth effect */
+}
+
+.navbar-dropdown li a:hover::before {
+    opacity: 1; /* Make the icon visible on hover */
+}
+
+.navbar-dropdown li a:hover {
+    margin-left: 2em;
+    color: #0cc0df;
+    transition: opacity 0.3s ease, margin-left 0.3s ease;
+}
