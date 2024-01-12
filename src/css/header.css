@@ -117,7 +117,7 @@
     position: absolute; /* Position the icon absolutely within the link */
     margin-left: -1em; /* Adjust the margin-left to move the icon to the left of the text */
     opacity: 0; /* Initially set the opacity to 0 so the icon is hidden */
-    transition: opacity 0.3s ease, margin-left 0.3s ease; /* Add a transition for a smooth effect */
+    transition: opacity 0.3s ease, margin-left 0.8s ease; /* Add a transition for a smooth effect */
 }
 
 .navbar-dropdown li a:hover::before {
@@ -127,5 +127,5 @@
 .navbar-dropdown li a:hover {
     margin-left: 2em;
     color: #0cc0df;
-    transition: opacity 0.3s ease, margin-left 0.3s ease;
+    transition: opacity 0.3s ease, margin-left 1.8s ease;
 }
